@@ -1,0 +1,129 @@
+Script started on Fri 31 Aug 2018 01:54:36 PM CDT
+bash-4.2$ vim .gdbinit
+[?1h=[1;31r[m[m[0m[H[J[31;1H".gdbinit" [New File][2;1H[1m~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~[0m[31;79H0,0-1[9CAll[1;1H[31;1H[K[31;1H:x[?1l>[31;1H[K[31;1Hbash-4.2$ gdb
+GNU gdb (GDB) Red Hat Enterprise Linux 7.6.1-110.el7
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-redhat-linux-gnu".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+(gdb) file simple
+Reading symbols from /home/u2/amy0012/comp3500/simple.c/simple.c/simple...done.
+(gdb) break main
+Breakpoint 1 at 0x400595: file simple.c, line 4.
+(gdb) break sqrt
+Breakpoint 2 at 0x400480
+(gdb) info registers
+The program has no registers now.
+(gdb) r
+Starting program: /home/u2/amy0012/comp3500/simple.c/simple.c/simple 
+
+Breakpoint 1, main () at simple.c:4
+4	    int numbers[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-222.el7.x86_64
+(gdb) n
+5	    double avg = 0;
+(gdb) n
+6	    int i = 0;
+(gdb) n
+7	    while(i<10) {
+(gdb) s
+8		   avg += sqrt(numbers[i]);
+(gdb) s
+
+Breakpoint 2, 0x00007ffff7aff6b0 in sqrt () from /lib64/libm.so.6
+(gdb) s
+Single stepping until exit from function sqrt,
+which has no line number information.
+main () at simple.c:9
+9		   i++;
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00007ffff7aff6b0 in sqrt () from /lib64/libm.so.6
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00007ffff7aff6b0 in sqrt () from /lib64/libm.so.6
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00007ffff7aff6b0 in sqrt () from /lib64/libm.so.6
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00007ffff7aff6b0 in sqrt () from /lib64/libm.so.6
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00007ffff7aff6b0 in sqrt () from /lib64/libm.so.6
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00007ffff7aff6b0 in sqrt () from /lib64/libm.so.6
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00007ffff7aff6b0 in sqrt () from /lib64/libm.so.6
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00007ffff7aff6b0 in sqrt () from /lib64/libm.so.6
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00007ffff7aff6b0 in sqrt () from /lib64/libm.so.6
+(gdb) s
+Single stepping until exit from function sqrt,
+which has no line number information.
+main () at simple.c:9
+9		   i++;
+(gdb) s
+7	    while(i<10) {
+(gdb) s
+11	    avg = avg / 10;
+(gdb) s
+12	    printf("%f", avg);
+(gdb) s
+13	    return(0);
+(gdb) c
+Continuing.
+2.246828[Inferior 1 (process 31780) exited normally]
+(gdb) 
+The program is not being run.
+(gdb) q
+bash-4.2$ esit[K[K[Kxit
+exit
+
+Script done on Fri 31 Aug 2018 01:56:56 PM CDT

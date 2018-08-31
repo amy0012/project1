@@ -1,0 +1,187 @@
+Script started on Wed 29 Aug 2018 05:08:16 PM CDT
+bash-4.2$ pwd
+/home/u2/amy0012
+bash-4.2$ ls
+commands.script  comp3500  ntuser.cmd
+bash-4.2$ cd comp3500[K[K[K[K[K[K[K[K[K[K[Ktouch textfile.txt
+bash-4.2$ cp [K[K[Kmkdir sample_directory
+bash-4.2$ cp textfile.txt sample)[K_directory/
+bash-4.2$ mkdir empty_directory
+bash-4.2$ mv textfile.txt empty_directory
+bash-4.2$ cd empty_directory
+bash-4.2$ ls
+textfile.txt
+bash-4.2$ rem[K[Km textfile.txt.textfile.txt/textfile.txt[C[C[C[C[C[C[C[C[C[C[C[C
+bash-4.2$ ls
+bash-4.2$ cd
+bash-4.2$ rmdir empty_directory
+bash-4.2$ ls
+commands.script  comp3500  ntuser.cmd  sample_directory
+bash-4.2$ man ls
+[?1h=LS(1)                                   User Commands                                   LS(1)[m
+[m
+[1mNAME[0m[m
+       ls - list directory contents[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mls[0m [[4mOPTION[m]... [[4mFILE[m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       List  information  about  the  FILEs (the current directory by default).  Sort entries[m
+       alphabetically if none of [1m-cftuvSUX[0m nor [1m--sort[0m is specified.[m
+[m
+       Mandatory arguments to long options are mandatory for short options too.[m
+[m
+       [1m-a[0m, [1m--all[0m[m
+              do not ignore entries starting with .[m
+[m
+       [1m-A[0m, [1m--almost-all[0m[m
+              do not list implied . and ..[m
+[m
+       [1m--author[0m[m
+              with [1m-l[0m, print the author of each file[m
+[m
+       [1m-b[0m, [1m--escape[0m[m
+              print C-style escapes for nongraphic characters[m
+[m
+       [1m--block-size[0m=[4mSIZE[m[m
+              scale sizes by SIZE before printing them; e.g., '--block-size=M'  prints  sizes[m
+              in units of 1,048,576 bytes; see SIZE format below[m
+[m
+[7m Manual page ls(1) line 1 (press h for help or q to quit)[m[K[K[?1l>bash-4.2$ ls
+commands.script  comp3500  ntuser.cmd  sample_directory
+bash-4.2$ cd c[Ksample_directory
+bash-4.2$ ls
+textfile.txt
+bash-4.2$ chmod 644 textfile.txt
+bash-4.2$ top
+[?1h=[H[J[mtop - 17:17:25 up 6 days,  8:21, 32 users,  load average: 0.22, 0.20, 0.11[m[m[K
+Tasks:[m[1m 520 [mtotal,[m[1m   1 [mrunning,[m[1m 517 [msleeping,[m[1m   2 [mstopped,[m[1m   0 [mzombie[m[m[K
+%Cpu(s):[m[1m  0.5 [mus,[m[1m  1.3 [msy,[m[1m  0.0 [mni,[m[1m 98.2 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m 24510024 [mtotal,[m[1m 18884860 [mfree,[m[1m  2176460 [mused,[m[1m  3448704 [mbuff/cache[m[m[K
+KiB Swap:[m[1m 12386300 [mtotal,[m[1m 12386300 [mfree,[m[1m        0 [mused.[m[1m 21742116 [mavail Mem [m[m[K
+[K
+[7m  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                     [m[K
+[m[1m 5342 amy0012   20   0  168680   2752   1640 R  13.6  0.0   0:00.06 top                         [m[K
+[m    1 root      20   0  194712   7912   4168 S   0.0  0.0   2:36.23 systemd                     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.39 kthreadd                    [m[K
+[m    3 root      20   0       0      0      0 S   0.0  0.0   0:00.15 ksoftirqd/0                 [m[K
+[m    5 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:0H                [m[K
+[m    8 root      rt   0       0      0      0 S   0.0  0.0   0:00.25 migration/0                 [m[K
+[m    9 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh                      [m[K
+[m   10 root      20   0       0      0      0 S   0.0  0.0   0:56.42 rcu_sched                   [m[K
+[m   11 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 lru-add-drain               [m[K
+[m   12 root      rt   0       0      0      0 S   0.0  0.0   0:03.84 watchdog/0                  [m[K
+[m   13 root      rt   0       0      0      0 S   0.0  0.0   0:01.27 watchdog/1                  [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.17 migration/1                 [m[K
+[m   15 root      20   0       0      0      0 S   0.0  0.0   0:00.21 ksoftirqd/1                 [m[K
+[m   17 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/1:0H                [m[K
+[m   19 root      rt   0       0      0      0 S   0.0  0.0   0:01.25 watchdog/2                  [m[K
+[m   20 root      rt   0       0      0      0 S   0.0  0.0   0:00.61 migration/2                 [m[K
+[m   21 root      20   0       0      0      0 S   0.0  0.0   0:00.12 ksoftirqd/2                 [m[K
+[m   23 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/2:0H                [m[K
+[m   24 root      rt   0       0      0      0 S   0.0  0.0   0:01.23 watchdog/3                  [m[K
+[m   25 root      rt   0       0      0      0 S   0.0  0.0   0:00.17 migration/3                 [m[K
+[m   26 root      20   0       0      0      0 S   0.0  0.0   0:00.18 ksoftirqd/3                 [m[K
+[m   28 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/3:0H                [m[K
+[m   29 root      rt   0       0      0      0 S   0.0  0.0   0:01.24 watchdog/4                  [m[K
+[m   30 root      rt   0       0      0      0 S   0.0  0.0   0:00.49 migration/4                 [m[K[H[mtop - 17:17:28 up 6 days,  8:21, 32 users,  load average: 0.20, 0.20, 0.11[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.1 [msy,[m[1m  0.0 [mni,[m[1m 99.9 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m 24510024 [mtotal,[m[1m 18884552 [mfree,[m[1m  2176620 [mused,[m[1m  3448852 [mbuff/cache[m[m[K
+KiB Swap:[m[1m 12386300 [mtotal,[m[1m 12386300 [mfree,[m[1m        0 [mused.[m[1m 21741904 [mavail Mem [m[m[K
+[K
+
+[m[1m 5342 amy0012   20   0  168680   2816   1692 R   0.7  0.0   0:00.08 top                         [m[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[H[mtop - 17:17:31 up 6 days,  8:21, 32 users,  load average: 0.20, 0.20, 0.11[m[m[K
+
+%Cpu(s):[m[1m  0.1 [mus,[m[1m  0.0 [msy,[m[1m  0.0 [mni,[m[1m 99.9 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m 24510024 [mtotal,[m[1m 18884684 [mfree,[m[1m  2176496 [mused,[m[1m  3448844 [mbuff/cache[m[m[K
+KiB Swap:[m[1m 12386300 [mtotal,[m[1m 12386300 [mfree,[m[1m        0 [mused.[m[1m 21742044 [mavail Mem [m[m[K
+[K
+
+[m[1m 5342 amy0012   20   0  168680   2816   1692 R   0.7  0.0   0:00.10 top                         [m[K
+[m13662 qzl0026   20   0  617976   9644   5696 S   0.7  0.0   2:03.44 gsd-housekeepin             [m[K
+[m 3308 root      20   0       0      0      0 S   0.3  0.0   0:00.15 kworker/12:0                [m[K
+[m 4761 root      20   0       0      0      0 S   0.3  0.0   0:00.01 kworker/u64:1               [m[K
+[m15050 qzl0026   20   0  617976   9640   5700 S   0.3  0.0   2:04.38 gsd-housekeepin             [m[K
+[m    1 root      20   0  194712   7912   4168 S   0.0  0.0   2:36.23 systemd                     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.39 kthreadd                    [m[K
+[m    3 root      20   0       0      0      0 S   0.0  0.0   0:00.15 ksoftirqd/0                 [m[K
+[m    5 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:0H                [m[K
+[m    8 root      rt   0       0      0      0 S   0.0  0.0   0:00.25 migration/0                 [m[K
+[m    9 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh                      [m[K
+[m   10 root      20   0       0      0      0 S   0.0  0.0   0:56.42 rcu_sched                   [m[K
+[m   11 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 lru-add-drain               [m[K
+[m   12 root      rt   0       0      0      0 S   0.0  0.0   0:03.84 watchdog/0                  [m[K
+[m   13 root      rt   0       0      0      0 S   0.0  0.0   0:01.27 watchdog/1                  [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.17 migration/1                 [m[K
+[m   15 root      20   0       0      0      0 S   0.0  0.0   0:00.21 ksoftirqd/1                 [m[K
+[m   17 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/1:0H                [m[K
+[m   19 root      rt   0       0      0      0 S   0.0  0.0   0:01.25 watchdog/2                  [m[K
+[m   20 root      rt   0       0      0      0 S   0.0  0.0   0:00.61 migration/2                 [m[K
+[m   21 root      20   0       0      0      0 S   0.0  0.0   0:00.12 ksoftirqd/2                 [m[K
+[m   23 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/2:0H                [m[K
+[m   24 root      rt   0       0      0      0 S   0.0  0.0   0:01.23 watchdog/3                  [m[K
+[m   25 root      rt   0       0      0      0 S   0.0  0.0   0:00.17 migration/3                 [m[K[H[mtop - 17:17:34 up 6 days,  8:21, 32 users,  load average: 0.18, 0.19, 0.11[m[m[K
+
+%Cpu(s):[m[1m  0.0 [mus,[m[1m  0.0 [msy,[m[1m  0.0 [mni,[m[1m 99.9 [mid,[m[1m  0.0 [mwa,[m[1m  0.0 [mhi,[m[1m  0.0 [msi,[m[1m  0.0 [mst[m[m[K
+KiB Mem :[m[1m 24510024 [mtotal,[m[1m 18884684 [mfree,[m[1m  2176504 [mused,[m[1m  3448836 [mbuff/cache[m[m[K
+
+[K
+
+[m[1m 5342 amy0012   20   0  168680   2816   1692 R   1.0  0.0   0:00.13 top                         [m[K
+[m 1989 root      20   0   93816   2188   1132 S   0.3  0.0   0:03.86 master                      [m[K
+[m 7940 gdm       20   0  731612  17008   9076 S   0.3  0.1   1:56.95 gsd-color                   [m[K
+[m    1 root      20   0  194712   7912   4168 S   0.0  0.0   2:36.23 systemd                     [m[K
+[m    2 root      20   0       0      0      0 S   0.0  0.0   0:00.39 kthreadd                    [m[K
+[m    3 root      20   0       0      0      0 S   0.0  0.0   0:00.15 ksoftirqd/0                 [m[K
+[m    5 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:0H                [m[K
+[m    8 root      rt   0       0      0      0 S   0.0  0.0   0:00.25 migration/0                 [m[K
+[m    9 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh                      [m[K
+[m   10 root      20   0       0      0      0 S   0.0  0.0   0:56.42 rcu_sched                   [m[K
+[m   11 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 lru-add-drain               [m[K
+[m   12 root      rt   0       0      0      0 S   0.0  0.0   0:03.84 watchdog/0                  [m[K
+[m   13 root      rt   0       0      0      0 S   0.0  0.0   0:01.27 watchdog/1                  [m[K
+[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:00.17 migration/1                 [m[K
+[m   15 root      20   0       0      0      0 S   0.0  0.0   0:00.21 ksoftirqd/1                 [m[K
+[m   17 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/1:0H                [m[K
+[m   19 root      rt   0       0      0      0 S   0.0  0.0   0:01.25 watchdog/2                  [m[K
+[m   20 root      rt   0       0      0      0 S   0.0  0.0   0:00.61 migration/2                 [m[K
+[m   21 root      20   0       0      0      0 S   0.0  0.0   0:00.12 ksoftirqd/2                 [m[K
+[m   23 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/2:0H                [m[K
+[m   24 root      rt   0       0      0      0 S   0.0  0.0   0:01.23 watchdog/3                  [m[K
+[m   25 root      rt   0       0      0      0 S   0.0  0.0   0:00.17 migration/3                 [m[K
+[m   26 root      20   0       0      0      0 S   0.0  0.0   0:00.18 ksoftirqd/3                 [m[K
+[m   28 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/3:0H                [m[K[?1l>[32;1H
+[Kbash-4.2$ who am i
+amy0012  pts/13       2018-08-29 17:08
+bash-4.2$ nproc
+16
+bash-4.2$ clear
+[H[Jbash-4.2$ exit
+exit
+
+Script done on Wed 29 Aug 2018 05:18:16 PM CDT
