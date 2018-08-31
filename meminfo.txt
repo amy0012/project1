@@ -43,5 +43,3 @@ HugePages_Surp:        0
 Hugepagesize:       2048 kB
 DirectMap4k:      266852 kB
 DirectMap2M:    24889344 kB
-
-CHANGE MADE
